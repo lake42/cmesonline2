@@ -1,0 +1,103 @@
+.black
+{
+color:black;
+}
+
+.highlight 
+{font-family: verdana, sans-serif;font-size: 11px;color:white}
+
+.leftnav 
+{
+font-family: georgia, serif;
+font-size: 10px;
+color:#5a7dbd;
+}
+	
+.nav2 
+{
+font-family: georgia, serif;
+font-size: 11px;
+color:#5a7dbd;
+line-height:14px;
+}
+
+.verse 
+{font-family: verdana, sans-serif;font-size: 11px}
+	
+a 
+{text-decoration:none;color:#0033ff}
+
+a:visited
+{color:#336633}	
+
+a:hover
+{text-decoration:underline}
+	
+.trim_1 
+{background: #ffffff}
+
+.trim_2 
+{background: #ffffff}
+
+.trim_3 
+{background: #5b83c9}
+
+.trim_4 
+{background: #d8d8d8}
+
+.bod1
+{
+line-height:16px;
+}
+
+.date,.crumb 
+{
+font-family: arial, sans-serif;
+font-size: 11px
+}
+
+.body, dd , td, pre
+{
+font-family: georgia, serif;
+font-size: 12px;
+line-height:14px;
+}
+
+.bod 
+{
+font-family: verdana, sans-serif;
+font-size: 12px
+}
+
+h2 
+{
+text-decoration:underline;
+line-height:20px;
+}
+
+h1
+{
+line-height:24px;
+}
+
+.header 
+{
+font-family: arial, sans-serif;
+font-size: 14px;
+font-weight:bold;
+}
+
+.small 
+{font-family: verdana, sans-serif;font-size: 9px}
+
+input 
+{font-family: verdana, sans-serif;font-size: 9px}
+
+.title 
+{font-family: arial, sans-serif;font-size: 14px}
+
+p
+{font-family: georgia, serif; font-size: 12px;line-height:20px;}
+
+pre
+{font-family: verdana, sans-serif;font-size: 11px;color:black}

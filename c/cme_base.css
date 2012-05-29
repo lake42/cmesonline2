@@ -1,0 +1,93 @@
+
+	
+	
+#textSpot, #textSpot2
+	{
+	font-family: georgia;
+	font-size:11px;
+	color:black;
+	}
+
+.image1 
+	{
+	border:.09em solid black;
+	width:525px;
+	margin: 0;
+  	padding: 3px 3px 7px 3px;
+  	border: 1px solid #ccc;
+  	border-top-color: #eee;
+  	border-right-color: #ddd;
+  	border-bottom-color: #bbb;
+  	background-color: #fff;
+  	text-align: center;
+
+	}
+
+#crumbs
+	{
+	font-family:verdana;
+	font-size:.6em;
+/*	position:absolute;
+	left:138px;*/
+	margin:3px;
+	}
+
+
+	
+p.photo a, p.thumb a, ul.thumbnails a,.thumb, .thumb2
+	{
+ /* 	display: block;
+  	float: left; */
+  	margin: 0;
+	padding: 3px 3px 7px 3px;
+  	border: 1px solid #ccc;
+  	border-top-color: #eee;
+  	border-right-color: #ddd;
+  	border-bottom-color: #bbb;
+  	background-color: #fff;
+  	text-align: center;
+	}
+	
+p.thumb a, ul.thumbnails a , .thumb
+	{
+  	width: 80px;
+/*  	margin-right: 10px; */
+  	margin-bottom: 10px;
+	}
+
+#bishop p{
+font-family:georgia;
+font-size:1.2em;
+text-align:left;
+padding: 7px 0 0 0;
+color: #000000;
+}
+
+.thumb2
+{
+width:60px;
+}
+
+.smallcuts{
+font-size:9px;
+line-height:11px;
+}
+
+.intro{
+    font-family: georgia, serif;
+    font-size: 1.1em;
+    line-height:1.1em;
+    color: #000000;
+}
+
+.byline2
+	{
+	font-family:georgia, serif;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom:4px;
+	}
+
+#side{
+    font-family:georgia,serif;
+}

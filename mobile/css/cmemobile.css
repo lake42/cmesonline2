@@ -1,0 +1,60 @@
+#home{
+background: #ffffff;
+margin: auto;
+}
+
+#home p{
+text-align: center;
+
+}
+
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 33.33333333%; }
+.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+.gallery li img { display: block; width: 100%; height: auto; }
+
+
+#bishopdata p{font-size:14px;line-height:18px;}
+#bishopdata h1{font-size:22px;}
+#bishopdata h2{font-size:18px; font-family: Times; margin:0 0 50px 0;}
+#bishopdata h3{font-size:14px;}
+#bishopdata h4{font-size:11px;}
+
+#bible li{
+list-style: none;
+}
+
+            .thumb
+            {
+                display: block;
+                float: left;
+                padding: 5px 5px 5px 5px;
+                border: 1px solid #ccc;
+                border-top-color: #eee;
+                border-right-color: #ddd;
+                border-bottom-color: #bbb;
+                background-color: #fff;
+                text-align: center;
+                width: 95px;
+                margin-right: 6px;
+                margin-bottom: 3px;
+            }
+            
+                #map_canvas {
+                height: 270px;
+                width: 277px;
+                padding: 5px 5px 5px 5px;
+                border: 1px solid #ccc;
+                border-top-color: #eee;
+                border-right-color: #ddd;
+                border-bottom-color: #bbb;
+                background-color: #fff;
+
+                background-color: rgba(255,255,255,.3);
+            }
+            
+            #map li{
+            list-style:none;
+            }
+
