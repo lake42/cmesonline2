@@ -1,0 +1,500 @@
+   17  source ~/.bash_profile 
+   18  clear
+   19  which php
+   20  vim ~/.bash_profile
+   21  vim ~/.profile
+   22  vim ~/.bash_profile
+   23  source ~/.bash_profile 
+   24  clear
+   25  which php
+   26  vim ~/.bash_profile
+   27  vim ~/.bash_profile
+   28  which php
+   29  source ~/.bash_profile 
+   30  clear
+   31  which php
+   32  cd which php
+   33  cd /Applications/XAMPP/xamppfiles/bin/
+   34  pecl install ssh2 channel://pecl.php.net/ssh2-version
+   35  pecl install ssh2 channel://pecl.php.net/ssh2
+   36  pecl install ssh2 
+   37  pecl install ssh2 channel://pecl.php.net/ssh2-0.12
+   38  pecl install ssh2 channel://pecl.php.net/package/ssh2/0.12
+   39  pecl install ssh2 
+   40  clear
+   41  pear install -f ssh2
+   42  cd ~/Desktop/
+   43  ls
+   44  cd ssh2-0.12
+   45  /Applications/xampp/xamppfiles/bin/phpize
+   46  cd /Applications/xampp/xamppfiles
+   47  ln -s ../include include
+   48  sudo ln -s ../include include
+   49  cd ..
+   50  cp include/unix.h include/php/php5/php/Zend/
+   51  cp ~/Desktop/ssh2-0.12 .
+   52  cp -R ~/Desktop/ssh2-0.12 .
+   53  sudo cp -R ~/Desktop/ssh2-0.12 .
+   54  ls
+   55  cd ssh2-0.12/
+   56  clear
+   57  cd ssh2-0.12/
+   58  chmod -R 777 ssh2-0.12/
+   59  sudo chmod -R 777 ssh2-0.12/
+   60  cd ssh2-0.12/
+   61  clear
+   62  /Applications/xampp/xamppfiles/bin/phpize
+   63  ./configure --with-ssh2  --with-php-config=/Applications/xampp/xamppfiles/bin/php-config
+   64  clear
+   65  ls
+   66  cd ssh2-0.12/
+   67  /Applications/xampp/xamppfiles/bin/phpize
+   68  sudo /Applications/xampp/xamppfiles/bin/phpize
+   69  cd ../..
+   70  ls
+   71  rm -Rf ssh2-0.12/
+   72  sudo rm -Rf ssh2-0.12/
+   73  clear
+   74  ls
+   75  cd xamppfiles/
+   76  ls
+   77  ls -al
+   78  open .
+   79  cd /
+   80  sudo pecl install ssh2-beta 
+   81  sudo pecl install autoconf
+   82  cd -
+   83  sudo pecl install autoconf
+   84  sudo pecl install zend
+   85  sudo pecl install ssh2-beta
+   86  clear
+   87  ls
+   88  sudo cp -R ~/Desktop/ssh2-0.12 .
+   89  clear
+   90  cd ssh2-0.12/
+   91  chmod -R 777 ssh2-0.12/
+   92  sudo chmod -R 777 ssh2-0.12/
+   93  clear
+   94  cd ssh2-0.12/
+   95  phpize
+   96  cd ssh2-0.12/
+   97  ls
+   98  sudo phpize
+   99  echo env
+  100  echo $ENVIRONMENT
+  101  echo $ENV
+  102  clear
+  103  which php
+  104  clear
+  105  which php
+  106  cd ../bin
+  107  cd ./../bin
+  108  cd ..
+  109  ls
+  110  cd ..
+  111  ls
+  112  cd bin/
+  113  clear
+  114  ls
+  115  ./configure
+  116  sudo wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.62.tar.gz
+  117  sudo tar -zvxf autoconf-2.62.tar.gz
+  118  cd autoconf-2.62
+  119  sudo ./configure && make && make install
+  120  clear
+  121  cd ../
+  122  cd ..
+  123  cd ssh2-0.12/ssh2-0.12/
+  124  phpize
+  125  clear
+  126  cd ..
+  127  cd ..
+  128  cd bin
+  129  sudo pecl install ssh2-beta 
+  130  sudo wget http://sourceforge.net/projects/libssh2/
+  131  rm index.html 
+  132  sudo rm index.html 
+  133  clear
+  134  cd ..
+  135  cd ssh2-0.12/ssh2-0.12/
+  136  ./configure
+  137  make
+  138  clear
+  139  cd .
+  140  cd ..
+  141  cd ..
+  142  sudo rm -R ssh2-0.12/
+  143  clear
+  144  ls
+  145  git clone git://git.libssh2.org/libssh2.git
+  146  sudo git clone git://git.libssh2.org/libssh2.git
+  147  ls
+  148  ls -l
+  149  ls -a
+  150  cd libssh2/
+  151  clear
+  152  ls
+  153  make
+  154  phpize
+  155  open .
+  156  INSTALL
+  157  install
+  158  git status
+  159  git branch
+  160  cd INSTALL
+  161  ls -al
+  162  pecl
+  163  clear
+  164  pecl
+  165  pecl list
+  166  clear
+  167  cd /Applications/XAMPP/xamppfiles/bin/libssh2-1.4.2 
+  168  ls
+  169  vim INSTALL 
+  170  configure
+  171  configure
+  172  cd configure
+  173  vim INSTALL 
+  174  clear
+  175  ./configure
+  176  make
+  177  make install
+  178  clear
+  179  which ssh2
+  180  clear
+  181  which ssh2
+  182  locate ssh2
+  183  clear
+  184  cd /usr/bin/
+  185  ls
+  186  clear
+  187  updatedb
+  188  dbupdate
+  189  clear
+  190  /Applications/XAMPP/xamppfiles/bin/php echo 'hello';
+  191  /Applications/XAMPP/xamppfiles/bin/php
+  192  /Applications/XAMPP/xamppfiles/bin/php /Applications/XAMPP/htdocs/infosurv/csv/_info.php
+  193  vim ~/.profile 
+  194  vim ~/.bash_profile 
+  195  source ~/.bash_profile 
+  196  clear
+  197  ls
+  198  clear
+  199  which php
+  200  clear
+  201  which php
+  202  /usr/bin/php /Applications/XAMPP/htdocs/infosurv/csv/_info.php
+  203  clear
+  204  ls
+  205  cd ..
+  206  clear
+  207  ls
+  208  cd ..
+  209  localhost
+  210  cd ..
+  211  ls
+  212  cd xamppfiles/
+  213  clear
+  214  ls
+  215  cd etc/
+  216  ls
+  217  vim php.ini
+  218   clear
+  219  /usr/local/php5/bin/php-config --extension-dir
+  220  /Applications/XAMPP/xamppfiles/
+  221  cd /Applications/XAMPP/xamppfiles/
+  222  ls
+  223  ls modules/
+  224  locate ssh2.so
+  225  locate ssh2
+  226  clear
+  227  brew install libssh2
+  228  sudo pecl install channel://pecl.php.net/ssh2-0.12
+  229  pecl which 
+  230  cd bin/
+  231  ls
+  232  pecl
+  233  which pecl
+  234  sudo /Applications/XAMPP/xammpfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  235  /Applications/XAMPP/xamppfiles/bin/pecl
+  236  sudo /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.11.3
+  237  cd ../etc/
+  238  vim php.ini 
+  239  clear
+  240  source ~/.bash_profile
+  241  clear
+  242  cd /etc/
+  243  vim php.ini
+  244  ls
+  245  vim php.ini.default
+  246  clear
+  247  printenv
+  248  php which
+  249  which php
+  250  vim ~/.bash_profile
+  251  source ~/.bash_profile
+  252  which php
+  253  which php
+  254  clear
+  255  HOSTNAME
+  256  clear
+  257  vim ~/.bash_profile
+  258  source ~/.bash_profile
+  259  which php
+  260  clear
+  261  which php
+  262  source ~/.profile
+  263  vim ~/.profile
+  264  vim ~/.bash_profile
+  265  ls /
+  266  ls / -al
+  267  cd /
+  268  ls -al
+  269  vim .profile 
+  270  sudo vim .profile 
+  271  whcih php
+  272  which php
+  273  clear
+  274  clear
+  275  vim ~/.profile
+  276  vim ~/.bash_profile
+  277  printenv
+  278  vim ~/.bash_profile
+  279  clear
+  280  which php
+  281  vim /.profile
+  282  sudo vim /.profile
+  283  clear
+  284  printenv
+  285  clear
+  286  which php
+  287  which php
+  288  clear
+  289  ls -al
+  290  clear
+  291  pecl
+  292  clear
+  293  brew install libssh2
+  294  sudo pear upgrade
+  295  clear
+  296  sudo php -d detect_unicode=0 /usr/lib/php/install-pear-nozlib.phar
+  297  sudo pear upgrade
+  298  clear
+  299  sudo pecl install channel://pecl.php.net/ssh2-0.11.3
+  300  vim /Applications/XAMPP/xamppfiles/etc/php.ini 
+  301  clear
+  302  sudo vim /.profile
+  303  vim 
+  304  ls /usr/
+  305  ls /usr/local/
+  306  ./configure --prefix=/usr/local --disable-debug --disable-dependency-tracking --with-openssl --with-libz CFLAGS="-O -arch i386" CPPFLAGS="-O -arch i386" LDFLAGS="-arch i386
+  307  exit
+  308  exit
+  309  brew -i libssh2
+  310  brew libssh2
+  311  brew install libssh2
+  312  brew uninstall libssh2
+  313  brew uninstall libssh2
+  314  exit
+  315  ./configure --prefix=/usr/local --disable-debug --disable-dependency-tracking --with-openssl --with-libz CFLAGS="-O -arch i386" CPPFLAGS="-O -arch i386" LDFLAGS="-arch i386
+  316  make install
+  317  exit
+  318  ;
+  319  ./configure --prefix=/usr/local --disable-debug --disable-dependency-tracking --with-openssl --with-libz CFLAGS="-O -arch i386" CPPFLAGS="-O -arch i386" LDFLAGS="-arch i386
+  320  make install
+  321  exit
+  322  ./configure --prefix=/usr/local --disable-debug --disable-dependency-tracking --with-openssl --with-libz CFLAGS="-O -arch i386" CPPFLAGS="-O -arch i386" LDFLAGS="-arch i386"
+  323  make install
+  324  exit
+  325  localhost
+  326  cd infosurv/csv
+  327  ls
+  328  chmod -R 777 assets/
+  329  clear
+  330  ls
+  331  vi /etc/php.ini
+  332  /Applications/XAMPP/xamppfiles//Applications/XAMPP/xamppfiles/lib/php/php-5.3.1/extensions/no-debug-non-zts-20090626/bz2.a 
+  333  clear
+  334  cd /Applications/XAMPP/xamppfiles/lib/php/php-5.3.1/extensions/no-debug-non-zts-20090626/
+  335  sudo pecl install channel://pecl.php.net/ssh2-0.11.3
+  336  clear
+  337  find / -name libssh2.so -print
+  338  clear
+  339  rpm -qa | grep openssl
+  340  clear
+  341  ls
+  342  clear
+  343  cd /Applications/XAMPP/xamppfiles/etc/
+  344  open .
+  345  which pecl
+  346  which ssl2
+  347  clear
+  348  which openssl
+  349  ls
+  350  cd //
+  351  cd -
+  352  clear
+  353  cd ..
+  354  open .
+  355  cd modules/
+  356  cd libssh2/
+  357  ls
+  358  ./configure
+  359  make
+  360  sudo vim /etc/php.ini.default
+  361  sudo echo /etc/php.ini.default > ~/Desktop/default.ini.php
+  362  ./configure
+  363  cd ~/Desktop/
+  364  clear
+  365  cd libssh2-1.4.2
+  366  ./configure
+  367  make
+  368  make install
+  369  which ssh2
+  370  clear
+  371  sudo ~/.profile 
+  372  sudo vim ~/.profile 
+  373  sudo vim ~/.bash_profile 
+  374  which ssh2
+  375  which pecl
+  376  clear
+  377  sudo /Applications/XAMPP/xamppfiles/bin/pecl install ssh2
+  378  sudo pecl install channel://pecl.php.net/ssh2-0.11.3
+  379  clear
+  380  /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  381  clear
+  382  /usr/local/php5/bin/php-config --extension-dir
+  383  cd /usr/local/php5/bin/php
+  384  cd /usr/local/php5/bin/
+  385  cd /usr/local/php5/
+  386  cd /usr/local/
+  387  ls
+  388  cd /
+  389  clear
+  390  sudo pecl install channel://pecl.php.net/ssh2-0.12
+  391  which ssh2
+  392  which php
+  393  which php
+  394  clear
+  395  printenvs
+  396  printenv
+  397  echo $PATH
+  398  clear
+  399  sudo /Applications/XAMPP/xamppfiles/bin/pecl config-set php_ini /Applications/XAMPP/xamppfiles/etc/php.ini
+  400  /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  401  sudo pecl install channel://pecl.php.net/ssh2-0.12
+  402  clear
+  403  which pecl
+  404  which ssh2
+  405  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  406  sudo /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  407  make test
+  408  which ssh2
+  409  which ssh2-0.12
+  410  sudo killall httpd -9
+  411  also do php -i | grep ssh
+  412  php -i | grep ssh
+  413  /Applications/XAMPP/xamppfiles/bin/php /Applications/XAMPP/htdocs/infosurv/csv/_info.php
+  414  clear
+  415  also do php -i | grep ssh
+  416  php -i | grep ssh
+  417  php -i 
+  418  clear
+  419  php -i | grep ssh
+  420  php --info
+  421  clear
+  422  printenv
+  423  php -i | grep ssh
+  424  clear
+  425  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  426  which ssh2
+  427  clear
+  428  cd /Applications/XAMPP/xamppfiles/lib/
+  429  ls
+  430  cd php/
+  431  ls
+  432  cd php-5.3.1/
+  433  clear
+  434  ls
+  435  cd extensions/
+  436  ls
+  437  cd no-debug-non-zts-20090626/
+  438  sudo /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  439  pear config-set php_ini /Applications/XAMPP/xamppfiles/etc/php.ini
+  440  sudo pear config-set php_ini /Applications/XAMPP/xamppfiles/etc/php.ini
+  441  sudo pecl config-set php_ini /Applications/XAMPP/xamppfiles/etc/php.ini
+  442  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  443  sudo /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  444  sudo apache2ctl graceful
+  445  which ssh2
+  446  clear
+  447  php -i grep | ssh 
+  448  open .
+  449  sudo chmod +x ssh2.so
+  450  clear
+  451  php -i grep | ssh 
+  452  MACOSX_DEPLOYMENT_TARGET=10.6 CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp" CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" LDFLAGS="-arch i386 -arch x86_64 -bind_at_load"  ./pecl install 
+  453  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  454  MACOSX_DEPLOYMENT_TARGET=10.6 CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp" CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" LDFLAGS="-arch i386 -arch x86_64 -bind_at_load"  sudo /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  455  clear
+  456  php -i | grep ssh2
+  457  clear
+  458  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  459  MACOSX_DEPLOYMENT_TARGET=10.6 CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp" CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" LDFLAGS="-arch i386 -arch x86_64 -bind_at_load"  sudo /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  460  ss
+  461  clear
+  462  file /Applications/XAMPP/xamppfiles/lib/php/php-5.3.1/extensions/no-debug-non-zts-20090626/ssh2.so
+  463  what arch is ssh2.so
+  464  file /Applications/XAMPP/xamppfiles/bin/php
+  465  MACOSX_DEPLOYMENT_TARGET=10.6 CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp" CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" LDFLAGS="-arch i386 -arch x86_64 -bind_at_load"  sudo /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  466  file /Applications/XAMPP/xamppfiles/lib/php/php-5.3.1/extensions/no-debug-non-zts-20090626/ssh2.so
+  467  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  468  clear
+  469  CFLAGS='-arch i386' CCFLAGS='-arch i386' CXXFLAGS='-arch i386' /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  470  sudo CFLAGS='-arch i386' CCFLAGS='-arch i386' CXXFLAGS='-arch i386' /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  471  sudo CFLAGS='-arch i386' CCFLAGS='-arch i386' CXXFLAGS='-arch i386' /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12clear
+  472  clear
+  473  clear
+  474  brew install -i libssh2
+  475  brew uninstall libssh2
+  476  brew install -i libssh2
+  477  clear
+  478  brew uninstall libssh2
+  479  brew -i libssh2 && ./configure --prefix=/usr/local --disable-debug --disable-dependency-tracking --with-openssl --with-libz CFLAGS="-O -arch i386" CPPFLAGS="-O -arch i386" LDFLAGS="-arch i386" && sudo make install
+  480  brew install -i libssh2 && ./configure --prefix=/usr/local --disable-debug --disable-dependency-tracking --with-openssl --with-libz CFLAGS="-O -arch i386" CPPFLAGS="-O -arch i386" LDFLAGS="-arch i386" && sudo make install
+  481  clear
+  482  brew -i libssh2
+  483  clear
+  484  brew -i libssh2
+  485  brew installl -i libssh2
+  486  brew install -i libssh2
+  487  clear
+  488  brew install -i libssh2
+  489  clear
+  490  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  491  clear
+  492  CFLAGS='-arch i386' CCFLAGS='-arch i386' CXXFLAGS='-arch i386' /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  493  sudo CFLAGS='-arch i386' CCFLAGS='-arch i386' CXXFLAGS='-arch i386' /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+  494  clear
+  495  php -i | grep ssh2
+  496  clear
+  497  php -i | grep ssh2
+  498  php -i | grep php.ini
+  499  clear
+  500  clear
+  501  csv_prog
+  502  git add . 
+  503  git commit -m 'sftp functionality'
+  504  git push
+  505  clear
+  506  clear
+  507  sudo killall httpd -9
+  508  show
+  509* file /usr//php/extensions/no-debug-non-zts-20090626/ssh2.so
+  510  file /Applications/XAMPP/xamppfiles/lib/php/php-5.3.1/extensions/no-debug-non-zts-20090626/ssh2.so
+  511  brew uninstall libssh2
+  512  php -i | grep ssh2
+  513  sudo /Applications/XAMPP/xamppfiles/bin/pecl uninstall ssh2
+  514  hist
+  515  log
+  516  history | tee terminal_history.log

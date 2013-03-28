@@ -1,0 +1,651 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CMEsOnline Mobile</title>
+        <style type="text/css" media="screen">@import "jqtouch/jqtouch.css";</style>
+        <style type="text/css" media="screen">@import "themes/apple/theme.css";</style>
+        <style type="text/css" media="screen">@import "jqtouch/jqt.photo.css";</style>
+        <script src="jqtouch/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+       <script src="jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+
+        <script src="jqtouch/jqt.photo.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jqtouch/jqt.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+   <!--     
+        <script src="jqtouch/jqt.location.js" type="text/javascript" charset="utf-8"></script>
+       --> 
+        <script type="text/javascript" charset="utf-8" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDALsIoVNAy9UfX4uK69PchXs3NsIKPR1M&sensor=true"></script>
+        
+        <!--
+        <script type="text/javascript" charset="utf-8" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      -->
+        <script type="text/javascript">
+</script>
+<script type="text/javascript">
+</script>
+        <script type="text/javascript" charset="utf-8">
+            
+            var userAgent = navigator.userAgent.toLowerCase();
+            var isMobile = (userAgent.indexOf('iphone') != -1 || userAgent.indexOf('ipod') != -1 || userAgent.indexOf('mobile') || userAgent.indexOf('ipad')) ? true : false;
+            clickEvent = isMobile ? 'tap' : 'click';
+
+               var jQT = new $.jQTouch({
+                icon: 'cmelogo_mbl2.png',
+                icon4: 'cmelogo_mbl2.png',
+                addGlossToIcon: false,
+                useFastTouch: false,
+                startupScreen: 'cmelogo_mbl2.png',
+                initializeTouch:'a, .mp',
+                statusBar: 'black',
+                preloadImages: [
+                    '../../themes/apple/img/activeButton.png',
+                    '../../themes/apple/img/back_button.png',
+                    '../../themes/apple/img/back_button_clicked.png',
+                    '../../themes/apple/img/blueButton.png',
+                    '../../themes/apple/img/button.png',
+                    '../../themes/apple/img/button_clicked.png',
+                    '../../themes/apple/img/grayButton.png',
+                    '../../themes/apple/img/greenButton.png',
+                    '../../themes/apple/img/redButton.png',
+                    '../../themes/apple/img/whiteButton.png',
+                    '../../themes/apple/img/loading.gif'
+                    
+                    ]
+            });
+            /*
+            $(function(){
+            jQT.generateGallery("photo2",[
+                {src:"http://www.nasa.gov/images/content/450090main_image_1653_946-710.jpg"},
+                {src:"http://rlv.zcache.com/css_is_awesome_mug-p1687164350719819282objs_210.jpg",caption:"CSS is Awesome"},
+                {src:"i/collegeofbishops_2011.jpg"}
+                ]);
+            });
+*/
+
+
+            $(function(){
+                
+ 
+/*
+$("a[class=testevent]").delegate("a", clickEvent, function(){
+    alert('LOLCAT');
+});
+           */     
+               
+$('.mp').bind(clickEvent, function(e) {
+  var s = $(this).attr('rel');
+  var b = 1;
+//  alert();
+  findAddressViaGoogle(s,b);
+});
+
+/*
+ $('.mp').live('pageAnimationEnd', function(e){
+//$('.mp').bind('tap', function(e) {
+  var s = $(this).attr('rel');
+  alert(s);
+  findAddressViaGoogle(s);
+});
+*/        
+
+jQT.generateGallery("photo", [
+{src:"i/CME_Convocation_2011_001.jpg",caption:"2011 CME Convocation, Atlanta Georgia"},
+{src:"i/CME_Convocation_2011_002.jpg",caption:"Bishop Teresa Snorton"},
+{src:"i/CME_Convocation_2011_003.jpg",caption:"Senior Bishop Marshall Gilmore"},
+{src:"i/CME_Convocation_2011_004.jpg",caption:"Convocation Host Bishop Kenneth W. Carter"},
+{src:"i/CME_Convocation_2011_005.jpg",caption:"Atlanta Mayor Kasim Reed"},
+{src:"i/CME_Convocation_2011_006.jpg",caption:"Bishop Othal Hawthorne Lakey"},
+{src:"i/CME_Convocation_2011_007.jpg",caption:"2011 CME Convocation"},
+{src:"i/CME_Convocation_2011_008.jpg",caption:"Bishop Lakey &amp; Senior Bishop Graves"},
+{src:"i/CME_Convocation_2011_009.jpg",caption:"Bishop Snorton"},
+{src:"i/CME_Convocation_2011_010.jpg",caption:"2011 CME Convocation Chorus"},
+{src:"i/collegeofbishops_2011.jpg",caption:"2011 - College of Bishops"},
+{src:"../images/Congressman Lewis with COB.jpg",caption:"Congressman John Lewis w/College of Bishops"},
+{src:"../images/MissionaryWorkshop.JPG",caption:"Missionary Workshop"},
+
+
+],
+{defaultIndex:0});
+
+/*
+var lookup = jQT.updateLocation(function(coords){
+    
+    var myLatlng = new google.maps.LatLng(33.529349, -84.55970100000002);
+    
+    var myOptions = {
+  zoom: 14,
+  center: myLatlng,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+
+     var map = new google.maps.Map($("#map_canvas").get(0), myOptions);  
+    
+     var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title:"Hello World!"
+   });
+});
+*/
+function spl(q){
+    var res = q.split(",");
+    return res;
+}
+
+
+function showAddress(address) {
+     //   map = new GMap2(document.getElementById("map_canvas"));
+    //    var geocoder = new GClientGeocoder();
+   // alert(address);
+        var geocoder = new google.maps.Geocoder();
+      //  newPointClicked(results[0].geometry.location);
+        geocoder.geocode( { 'address': address, 'region': 'us' }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+        var myLatlng = new google.maps.LatLng(results[0].geometry.location);
+        alert (myLatlng);
+        var myOptions = {
+          zoom: 16,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+    var map = new google.maps.Map($("#map_canvas").get(0), myOptions);
+    
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title:"Hello World!"
+   });
+
+        }
+        });
+/*
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert("We're sorry but '" + address + "' cannot be found on Google Maps. Please try again.");
+            } else {
+     	     map.panTo(point); 
+        }
+      });
+    }
+    */
+  }
+ 
+$('.loc').bind(clickEvent, function(){
+ //   alert(clickEvent);
+    $.ajax({                                      
+    url: 'locator_j.php', 
+    data: "", 
+    dataType: 'json',  
+    success: function(rows)        
+  {
+      
+  // alert('it hit');
+  $('ul#loclist').empty();
+      
+    for (var i in rows)
+    {
+      var row = rows[i];          
+
+      var church = row[0];
+      var address = row[1];
+      var city = row[2];
+      var state = row[3];
+      var zip = row[4];
+      var district = row[5];
+      var number = row[6];
+   //   alert(church);
+      $('ul#loclist').append('<li class="arrow"><a href="#map" class="mp" onclick="javascript:findAddressViaGoogle(\'' + address + ', ' + city + ' ' + state + '\',\'' + number + '\',\'' + church + '\');" rel="' + address + ', ' + city + ' ' + state + '" title="' + church + '" number="' + number + '">' + church + '<br/><span class="secondary">' + city + ', ' + state + ' | ' + district + ' district</span></a></li>');
+    } 
+  },
+  error: function()
+  {
+      alert("did not get json");
+  }
+      
+  
+})
+    
+});
+
+
+
+//clickEvent, function() {
+//}
+
+
+            });
+            
+function findAddressViaGoogle(a,b,c) {
+ //   alert(clickEvent);
+    var number = b;
+    var church = c;
+    var br = "<br/>";
+    var ss = "<strong>";
+    var se = "</strong>";
+    //alert('num:' + number + "church=" + church);
+    var info = ss + church + se + br + a + br +  number;
+    $('#infox').html(info);
+    var address = a;
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode( { 'address': address, 'region': 'us' }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            m = results[0].geometry.location;
+             var myLatlng = m;
+    var myOptions = {
+      zoom: 15,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+         var map = new google.maps.Map($("#map_canvas").get(0), myOptions);  
+        } else {
+            alert("Unable to find address: " + status);
+        }
+        
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title:"Hello World!"
+       });
+
+    });
+}
+
+            </script>
+            
+        <style type="text/css" media="screen">
+            #jqt.fullscreen #home .info {
+                display: none;
+            }
+            
+            .biblecontent p{
+                margin:9px 0 0 0;
+                line-height:17px;
+                font-weight:normal;
+            }
+            
+            .biblecontent h2 .byline{
+                font-family:georgia, serif;
+            }
+
+             div#jqt #splash {
+                padding: 5px 10px 40px;
+                text-shadow: rgba(255, 255, 255, 0.3) 0px -1px 0;
+                font-size: 12px;
+                text-align: center;
+                background: #CCC;
+            }
+
+            #splash p{
+
+                font-weight:normal;
+                font-family:helvetica, sans-serif;
+                margin:8px 0 0 0;
+            }
+            .body{
+             font-size:14px;
+             text-align:left;
+             font-weight:normal;
+            }
+
+            .body p{
+                margin:9px 0 0 0;
+                color:#343333;
+            }
+            .thumb
+            {
+                display: block;
+                float: left;
+                padding: 5px 5px 5px 5px;
+                border: 1px solid #ccc;
+                border-top-color: #eee;
+                border-right-color: #ddd;
+                border-bottom-color: #bbb;
+                background-color: #fff;
+                text-align: center;
+                width: 95px;
+                margin-right: 6px;
+                margin-bottom: 3px;
+            }
+
+        #bishWrap h2{
+            line-height:21px;
+            margin-bottom:40px;
+            font-family:georgia, serif;
+        }
+
+        #bishWrap {
+            font-size:12px;
+     /*       font-family:georgia, serif; */
+
+}
+.binfo{
+    margin-top:44px;
+}
+
+.eventItem p{
+    font-size:13px;
+    margin:0 0 9px 0;
+    font-weight:normal;
+
+}
+
+.eventItem li{
+        margin:0 0 0 0px;
+}
+
+.eventItem h3{
+     margin:0 0 0 0;
+}
+
+.eventItem a{
+    margin:0 0 0 0;
+
+}
+
+            #map_canvas {
+                height: 270px;
+                width: 277px;
+                background-color: rgba(255,255,255,.3);
+            }
+
+        </style>
+
+<body>
+    <div id="jqt">
+        <div id="splash">
+            <ul  class="rounded">
+                <li>
+            <p><img src="images/masthead_cmesonline_only.gif" width="250"/></p>
+            <p><img src="images/cmesonline_logo.png" /></p>
+            <p>CMEsOnline.org<br/>Mobile Version &#169; 2011</p>
+            <p>CMEsOnline was first developed in 1996 as a way
+                of exemplifying the Christian Methodist Episcopal Church's
+                mission and digital relevance online.
+                </p>
+            
+                </li>
+                <li class="arrow"><a href="#first">Begin</a></li>
+            </ul>
+        </div>
+        <div id="first">
+                 <div class="toolbar">
+                    <h1>CMEsOnline</h1>
+                    <a class="button back" href="#splash">Home</a>
+                </div>
+                <ul class="rounded">
+                    <li class="arrow"><a href="#bible">Bible</a></li>
+                    <li class="arrow"><a href="#resources">Resources</a></li>
+                    <li class="arrow"><a href="events_m.php">Events</a></li>
+                    <li class="arrow"><a href="#photo">Photos</a></li>
+                    <li class="arrow"><a href="#links">Links</a></li>
+                    <li class="arrow"><a href="#bishops">Bishops</a></li>
+                    <li class="arrow"><a href="#districts">Districts</a></li>
+                    <li class="arrow"><a href="#clocatorold" class="loc">Church Locator</a></li>
+                </ul>
+        </div>
+        
+        <div id="clocatorold">
+                 <div class="toolbar">
+                    <h1>Church Locator</h1>
+                    <a class="button back" id="info" href="#first">Main</a>
+                </div>
+            <ul class="rounded" id="loclist">
+            </ul>
+            
+        </div>
+    
+        
+        <div id="map">
+                <div class="toolbar">
+                    <h1>Church Locator</h1>
+                    <a class="button back" id="infoButton" href="locator_m.php">List</a>
+                </div>
+
+            <ul class="rounded">
+                <li id="infox"></li>
+                <li>
+             <div id="map_canvas"></div>
+                </li>
+            </ul>
+               
+        </div>     
+        
+        
+        <div id="bishops">
+                 <div class="toolbar">
+                    <h1>The Bishops</h1>
+                    <a class="button back" id="infoButton" href="#first">Main</a>
+                </div>
+                <ul class="rounded bishops">
+                    <li class="arrow"><a href="mobile_b.php?i=48">Thomas L. Hoyt</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=50">Paul A.G. Stewart</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=51">L. L. Reddick</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=52">Henry Williamson</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=53">Ronald Cunningham</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=54">Thomas L. Brown</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=55">Kenneth W. Carter</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=56">James Walker</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=57">W. Edward Lockett</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=58">Sylvester Williams</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=59">Teresa Snorton</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=60">Godwin Umoette</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=39">Nathaniel Linsey</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=41">Marshall Gilmore</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=42">William Graves</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=43">Dotcy Isom</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=44">Othal H. Lakey</a></li>
+                    <li class="arrow"><a href="mobile_b.php?i=46">E. Lynn Brown</a></li>
+                </ul>
+        </div>
+        <div id="a_creed">
+               <div class="toolbar">
+                    <h1>Apostle's Creed</h1>
+                    <a class="button back" href="#resources">Back</a>
+                </div>
+            <ul class="rounded">
+                <li>
+                I believe in God the Father Almighty,<br/>
+                maker of heaven and earth;<br/>
+                And in Jesus Christ his only Son our Lord:<br/>
+                who was conceived by the Holy Spirit,<br/>
+                born of the Virgin Mary,<br/>
+                suffered under Pontius Pilate,<br/>
+                was crucified, dead, and buried;<br/>
+                the third day he rose from the dead;<br/>
+                he ascended into heaven,<br/>
+                and sitteth at the right hand of God the Father Almighty;<br/>
+                from thence he shall come to judge the quick and the dead.<br/>
+                I believe in the Holy Spirit,<br/>
+                the holy catholic church,<br/>
+                the communion of saints,<br/>
+                the forgiveness of sins,<br/>
+                the resurrection of the body,<br/>
+                and the life everlasting. Amen.
+                </li>
+            </ul>
+        </div>
+      
+        <div id="l_prayer">
+               <div class="toolbar">
+                    <h1>Lord's Prayer</h1>
+                    <a class="button back" href="#resources">Back</a>
+                </div>
+            <ul class="rounded">
+                <li>      
+                Our Father who art in heaven,<br/>
+                hallowed be thy name.<br/>
+                Thy kingdom come.<br/>
+                Thy will be done<br/>
+                on earth as it is in heaven.<br/>
+                Give us this day our daily bread,<br/>
+                and forgive us our trespasses,<br/>
+                as we forgive those who trespass against us,<br/>
+                and lead us not into temptation,<br/>
+                but deliver us from evil.<br/><br/>
+
+                For thine is the kingdom,<br/>
+                and the power, and the glory,<br/>
+                for ever and ever.<br/>
+                Amen.
+                </li>
+            </ul>
+        </div>
+        <div id="resources">
+               <div class="toolbar">
+                    <h1>Resources</h1>
+                    <a class="button back" href="#first">Main</a>
+                </div>
+
+            <ul class="rounded">
+                    <li class="arrow"><a href="#a_creed">The Apostle's Creed</a></li>
+                    <li class="arrow"><a href="#l_prayer">The Lord's Prayer</a></li>
+                
+            </ul>
+        </div>
+      <div id="districts">
+               <div class="toolbar">
+                    <h1>The Districts</h1>
+                    <a class="button back" href="#first">Main</a>
+                </div>
+
+            <ul class="rounded">
+                    <li class="arrow"><a href="districts_m.php?i=1">First</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=2">Second</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=3">Third</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=4">Fourth</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=5">Fifth</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=5">Sixth</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=5">Seventh</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=5">Eighth</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=5">Ninth</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=5">Tenth</a></li>
+                    <li class="arrow"><a href="districts_m.php?i=5">Eleventh</a></li>
+            </ul>
+        </div>
+        
+        
+        
+<form id="bible" method="post" action="bible_search_m.php" class="form">
+    <div class="bible">
+                 <div class="toolbar">
+                    <h1>The Bible</h1>
+                    <a class="button back" href="#first">Main</a>
+                 </div>
+
+    <ul class="rounded">
+        <li>
+            <select id="book" name="book">
+                <optgroup label="Old Testament">
+                    <option value="genesis.txt">Genesis</option>
+                    <option value="exodus.txt">Exodus</option>
+                    <option value="leviticus.txt">Leviticus</option> 
+                    <option value="numbers.txt">Numbers</option> 
+                    <option value="duteronomy.txt">Deuteronomy</option> 
+                    <option value="joshua.txt">Joshua</option> 
+                    <option value="judges.txt">The Book of Judges</option> 
+                    <option value="ruth.txt">The Book of Ruth</option> 
+                    <option value="1kings.txt">The First Book of Samuel</option>
+                    <option value="2kings.txt">The Second Book of Samuel</option>
+                    <option value="3kings.txt">The First Book of the Kings</option>
+                    <option value="4kings.txt">The Second Book of the Kings</option>
+                    <option value="1chronicles.txt">The First Book of the Chronicles</option>
+                    <option value="2chronicles.txt">The Second Book of the Chronicles</option>
+                    <option value="ezra.txt">Ezra</option> 
+                    <option value="nehemiah.txt">The Book of Nehemiah</option>
+                    <option value="esther.txt">The Book of Esther</option>
+                    <option value="job.txt">The Book of Job</option>
+                    <option value="psalms.txt">The Book of Psalms</option>
+                    <option value="proverbs.txt">The Proverbs</option>
+                    <option value="ecclesiastes.txt">Ecclesiastes or The Preacher</option>
+                    <option value="song_of_solomon.txt">The Song of Solomon</option>
+                    <option value="isaiah.txt">The Book of the Prophet Isaiah</option>
+                    <option value="jeremiah.txt">The Book of the Prophet Jeremiah</option>
+                    <option value="lamentations.txt">The Lamentations of Jeremiah</option>
+                    <option value="ezekiel.txt">The Book of the Prophet Ezekiel</option>
+                    <option value="daniel.txt">The Book of Daniel</option>
+                    <option value="hosea.txt">Hosea</option>
+                    <option value="joel.txt">Joel</option>
+                    <option value="amos.txt">Amos</option>
+                    <option value="obadiah.txt">Obadiah</option>
+                    <option value="jonah.txt">Jonah</option>
+                    <option value="micah.txt">Micah</option>
+                    <option value="nahum.txt">Nahum</option>
+                    <option value="habakkuk.txt">Habakkuk</option>
+                    <option value="zephaniah.txt">Zephaniah</option>
+                    <option value="haggai.txt">Haggai</option>
+                    <option value="zechariah.txt">Zechariah</option>
+                    <option value="malachi.txt">Malachi</option>
+                </optgroup>
+                <optgroup label="New Testament">
+                    <option value="mark.txt">Saint Mark</option>
+                    <option value="luke.txt">Saint Luke</option>
+                    <option value="john.txt">Saint John</option>
+                    <option value="acts.txt">The Acts</option>
+                    <option value="romans.txt">Romans</option>
+                    <option value="1corinthians.txt">First Corinthians</option>
+                    <option value="2corinthians.txt">Second Corinthians</option>
+                    <option value="galatians.txt">Galatians</option>
+                    <option value="ephesians.txt">Ephesians</option>
+                    <option value="1philippians.txt">Philippian</option>
+                    <option value="colossians.txt">Colossians</option>
+                    <option value="1thessalonians.txt">First Thessalonians</option>
+                    <option value="2thessalonians.txt">Second Thessalonians</option>
+                    <option value="1timothy.txt">First Timothy</option>
+                    <option value="2timothy.txt">Second Timothy</option>
+                    <option value="titus.txt">Titus</option>
+                    <option value="1philemon.txt">Philemon</option>
+                    <option value="hebrews.txt">Hebrews</option>
+                    <option value="james.txt">James</option>
+                    <option value="jude.txt">The General Epistle of Jude</option>
+                    <option value="1peter.txt">The First Epistle General of Peter</option>
+                    <option value="2peter.txt">The Second General Epistle of Peter</option>
+                    <option value="1john.txt">The First Epistle General of John</option>
+                    <option value="2john.txt">The Second Epistle General of John</option>
+                    <option value="3john.txt">The Third Epistle General of John</option>
+                    <option value="revelation.txt">Revelations</option>
+                </optgroup>
+            </select>
+        <li><input type="number" value="" name="chapter" placeholder="Chapter" id="chapter" /></li>                    
+        <li><input type="number" value="" name="startverse" placeholder="Start Verse" id="startverse" /></li>                    
+        <li><input type="number" value="" name="endverse" placeholder="End Verse" id="endverse" /></li>
+   </ul>
+<a style="margin:0 10px;color:rgba(0,0,0,.9)" href="#" class="submit whiteButton">Submit</a>
+    </div>
+</form>
+        
+              <div id="links">
+               <div class="toolbar">
+                    <h1>Links</h1>
+                    <a class="button back" href="#first">Main</a>
+                </div>
+                <ul class="rounded">
+                    <li class="arrow"><a href="http://www.c-m-e.org/" rel="gb_page[750, 500]" title="C-M-E.org" target="_blank">C-M-E.org</a></li>
+                    <li class="arrow"><a href="http://www.cmesonline.org/" target="_blank">CmesOnline.org</a></li>
+                    <li class="arrow"><a href="http://en.wikipedia.org/wiki/Christian_Methodist_Episcopal_Church" target="_blank">The CME Church on Wikipedia</a></li>
+                    <li class="arrow"><a href="http://www.thechristianindexonline.blogspot.com/" target="_blank">Christian Index Online</a></li>
+                    <li class="arrow"><a href="http://www.cme-church.org/Missionary_Council/" target="_blank">The Women's Missionary Council</a></li>
+                    <li class="arrow"><a href="http://www.cnetweb.org/cme_network.htm" target="_blank">CME Communication Network</a></li>
+                    <li class="arrow"><a href="http://www.google.com" target="_blank">Google</a></li>
+                </ul>
+       </div>
+
+    </div>
+ <!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://69.56.173.240/piwik/" : "http://69.56.173.240/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://69.56.173.240/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+</body>
+</html>
+
+

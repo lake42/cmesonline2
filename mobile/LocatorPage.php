@@ -40,22 +40,23 @@ function LocationPage(){
    //     $html.="<a href=\"map\" class=\"testevent\">" . row['address']. "</a>";
         $html.="</ul>";
         mysql_free_result($rs);
-echo $html;
+return $html;
 }
 
 function ljson($hookup){
     	$query 	= "SELECT church,address,city,state,zipcode,e_dist,phone FROM churches WHERE gmap='y'";
-	$rs 	= @mysql_query($query, $hookup);
+		$rs 	= @mysql_query($query, $hookup);
         $data = array();
         
-        while($row = mysql_fetch_row($rs) )
+        while($row = mysql_fetch_assoc($rs) )
         {
          $data[] = $row;    
             
         }
         mysql_free_result($rs);
-        echo json_encode( $data );
-    
+//        echo json_encode($data);
+  		echo json_encode($data);
+//	print_r($data); 
 }
 
 

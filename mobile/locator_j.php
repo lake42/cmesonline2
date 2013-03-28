@@ -11,5 +11,7 @@ $churches = new LocatorPage();
 global $hookup;
 $hookup = db_connect("cme");
 $churches->ljson($hookup);
+//print_r($data);
+
 
 

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CME Bishops API Test</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<div class="header">
+	<input type="text" id="searchKey"/>
+	<button id="btnSearch">Search</button>
+	<button id="btnAdd">New Wine</button>
+</div>
+
+
+<div class="leftArea">
+<ul id="wineList"></ul>
+</div>
+
+<form id="wineForm">
+	
+<div class="mainArea">
+
+<label>Rank:</label>
+<input id="wineId" name="id" type="text" disabled />
+
+<label>Bishop's Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label>Episcopal District:</label>
+<input type="text" id="dstrct_title" name="dstrct_title"/>
+
+<label>Email:</label>
+<input type="text" id="email" name="email"/>
+
+<label>Phone:</label>
+<input type="text" id="phone" name="phone"/>
+
+<label>Thumbnail:</label>
+<input type="text" id="thumbnail" name="thumbnail"/>
+
+<button id="btnSave">Save</button>
+<button id="btnDelete">Delete</button>
+
+</div>
+
+<div class="rightArea">
+
+<img id="pic" width	="150"/>
+
+<label>Vitae:</label>
+<textarea id="description" name="description"></textarea>
+</div>
+
+</form>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

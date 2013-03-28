@@ -16,7 +16,7 @@
         
         <br/>
 	<dd><h2 class="byline2">The CME Web Network</h2></dd>
-	<dd><a href="http://www.c-m-e.org/" rel="gb_page[750, 500]" title="C-M-E.org" target="_blank">C-M-E.org</a></dd>
+	<dd><a href="http://www.thecmechurch.org/" title="thecmechurch.org" target="_blank">thecmechurch.org</a></dd>
 	<dd><a href="http://www.thechristianindexonline.blogspot.com/" target="_blank">Christian Index Online</a></dd>
 	<dd><a href="http://www.cmepublishinghouse.com/" target="_blank">The C.M.E. Publishing House</a></dd>
 	<dd><a href="http://www.streamingfaith.com/directory/network.aspx?nsn=CMETV&bhcp=1" target="_blank">CMETV</a></dd>

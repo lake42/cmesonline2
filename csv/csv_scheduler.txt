@@ -1,0 +1,3 @@
+MAILTO="peb7268@gmail.com"
+* * * * * /Applications/XAMPP/xamppfiles/bin/php /Applications/XAMPP/htdocs/infosurv/csv/cron.php
+

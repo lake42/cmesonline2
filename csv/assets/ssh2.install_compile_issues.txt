@@ -1,0 +1,6 @@
+//Installing it and compiling as the 32 bit version
+sudo CFLAGS='-arch i386' CCFLAGS='-arch i386' CXXFLAGS='-arch i386' /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.11.3
+
+brew install -i libssh2
+CFLAGS='-arch i386' CCFLAGS='-arch i386' CXXFLAGS='-arch i386' /Applications/XAMPP/xamppfiles/bin/pecl install channel://pecl.php.net/ssh2-0.12
+

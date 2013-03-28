@@ -2,13 +2,15 @@
 $("#bb").live('click', function()
   {
   $.ajax({
-  url:'http://localhost/cmeREST/api/bishops/' + $(this).attr("bid"),
+//  url:'http://cmesonline.org/cmeREST/api/bishops/' + $(this).attr("bid"),
+url:'http://cmesonline.org/cmeREST/api/bishops/43',
   //url:'http://192.168.1.171/cmeREST/api/bishops/' + $(this).attr("bid"),
   data:'',
   dataType:'json',
   success: function(data)
     {
-     d = data;
+alert ('success:' + $(this).attr("bid"));
+     var d = data;
      $('h1#bhead').empty();
      $('h1#bhead').append(d['bishop_name']);
      $('#bishopdata').empty();
@@ -16,6 +18,8 @@ $("#bb").live('click', function()
     },
     error: function()
     {
+alert ('fail:' + $(this).attr("bid"));
+
     //alert('failed');
     }
   })
@@ -35,13 +39,13 @@ $("#lct").live('vclick', function(){
       for (var i in rows)
         {
           var row = rows[i];          
-          var church = row[0];
-          var address = row[1];
-          var city = row[2];
-          var state = row[3];
-          var zip = row[4];
-          var district = row[5];
-          var number = row[6];
+          var church = row['church'];
+          var address = row['address'];
+          var city = row['city'];
+          var state = row['state'];
+          var zip = row['zip'];
+          var district = row['e_dist'];
+          var number = row['number'];
           $('ul#locatelist').append('<li><a href="#map" class="lmap" onclick="javascript:findAddressViaGoogle(\'' + address + '\',\'' + city + '\',\'' + state + '\',\'' + number + '\',\'' + church + '\');" rel="' + address + ', ' + city + ' ' + state + '" title="' + row[0] + '" number="' + number + '">' + church + '<br/><span>' + city + ', ' + state + ' | ' + district + ' district</span></a></li>');
 	      $('ul#locatelist').listview('refresh');
         }
@@ -133,40 +137,37 @@ function showAddress(address) {
   
   
 function findAddressViaGoogle(a,city,state,b,c) {
- //   alert(clickEvent);
     var number = b;
     var church = c;
     var comma = ", ";
     var br = "<br/>";
     var ss = "<strong>";
     var se = "</strong>";
-    //alert('num:' + number + "church=" + church);
     var info = ss + c + se + br + a + br + city + comma + state + br + ss + number + se;
-    $('#infox').empty();
+    $('#infox').fadeOut('slow');
     $('#infox').html(info);
     var address = a;
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode( { 'address': address, 'region': 'us' }, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-            m = results[0].geometry.location;
-             var myLatlng = m;
-    var myOptions = {
-      zoom: 15,
-      center: myLatlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-
-         var map = new google.maps.Map($("#map_canvas").get(0), myOptions);  
-        } else {
+    	if (status == google.maps.GeocoderStatus.OK) {
+    		m = results[0].geometry.location;
+    		var myLatlng = m;
+    		var myOptions = {
+      			zoom: 15,
+      			center: myLatlng,
+      			mapTypeId: google.maps.MapTypeId.ROADMAP
+    		}
+         	var map = new google.maps.Map($("#map_canvas").get(0), myOptions);  
+        	} else {
             alert("Unable to find address: " + status);
-        }
-        
-      var marker = new google.maps.Marker({
+        }        
+		var marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
-          title:"Hello World!"
-       });
-
-    });
+          title:""
+		});
+	});
 }
+
+
   

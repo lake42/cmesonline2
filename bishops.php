@@ -20,7 +20,7 @@ function bpage($hookup,$id)
 	$b="<br />";
 	$seniors=array("48","42","41","39");
 
-	$info.="<div class='top'><p><img src='" . $row['thumbnail'] . "' width='120' class='thumb' />";
+	$info.="<div class='top'><p><img src='i/" . $row['thumbnail'] . "' width='120' class='thumb' />";
 
 	switch($row['b_id']){
 		case 'd':$info.="Deceased" . $b; break;
