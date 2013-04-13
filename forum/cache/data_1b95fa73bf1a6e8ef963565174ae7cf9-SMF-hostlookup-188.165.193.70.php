@@ -1,0 +1,1 @@
+<?php if (!defined('SMF')) die; if (1365843160 < time()) $expired = true; else{$expired = false; $value = 's:20:"ks309468.kimsufi.com";';}?>

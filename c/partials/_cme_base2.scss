@@ -1,0 +1,324 @@
+#textSpot, #textSpot2
+	{
+	font-family: georgia;
+	font-size:11px;
+	color:black;
+	}
+	
+.last {
+	margin-bottom:15px;	
+}
+
+.image1 
+	{
+	border:.09em solid black;
+	width:740px;
+	margin: 0 0 10px 0;
+  	padding: 5px 5px 5px 5px;
+  	border: 1px solid #ccc;
+  	border-top-color: #eee;
+  	border-right-color: #ddd;
+  	border-bottom-color: #bbb;
+  	background-color: #fff;
+  	text-align: center;
+	}
+
+#crumbs
+	{
+	font-family:verdana;
+	font-size:.6em;
+/*	position:absolute;
+	left:138px;*/
+	margin:3px;
+	}
+	
+.thumb
+	{
+  	display: block;
+  	float: left;
+	padding: 5px 5px 5px 5px;
+  	border: 1px solid #ccc;
+  	border-top-color: #eee;
+  	border-right-color: #ddd;
+  	border-bottom-color: #bbb;
+  	background-color: #fff;
+  	text-align: center;
+  	width: 150px;
+	margin-right: 10px;
+  	margin-bottom: 10px;
+	}
+	
+.thumb3
+	{
+  	clear:both;
+	padding: 5px 5px 5px 5px;
+  	border: 1px solid #ccc;
+  	border-top-color: #eee;
+  	border-right-color: #ddd;
+  	border-bottom-color: #bbb;
+  	background-color: #fff;
+  	text-align: center;
+  	width: 90px;
+  	margin-right:0;
+  	margin-bottom: 3px;
+	}
+	
+.cobItem{
+	float:left;
+	width:120px;
+	text-align:center;
+	font-family:Georgia, serif;
+	font-size:.8em;
+	line-height:1.2em;
+	color:#000000;
+}
+
+.cobRow{
+display:block;
+clear:both;
+width:650px;
+margin-left:auto;
+margin-right:auto;
+padding:0 0 15px 55px;
+height:150px;
+text-align:center;
+/*border:1px dotted red;*/
+}
+
+.cobRow2{
+display:block;
+clear:both;
+width:740px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:15px;
+padding:0 0 15px 10px;
+height:150px;
+text-align:center;
+border-bottom:1px solid #CCCCCC;
+}
+
+.list{
+	clear:both;
+}
+
+.body, .top {
+	width:550px;	
+	font-family:georgia, serif;
+	font-size:1.4em;
+	line-height:1.5em;
+	text-align:left;
+}
+
+.top, .top a{
+	margin:0;
+	padding:0;
+	color:#000000;
+}
+
+.top p{
+	margin-bottom:0;	
+}
+
+.top h2{
+	margin-bottom:0;
+	margin-top:0;
+	font-size:1.2em;	
+}
+
+.body{
+	clear:left;
+	border-top:1px solid #cccccc;
+	padding-top:10px;
+	margin-top:10px;
+}
+
+.body p{
+	margin-bottom:14px;
+	color:#000000;
+	font-size:1.3em;
+	line-height:1.5em;
+		
+}
+
+.body a {
+	color:#0584d5;	
+}
+
+.column2a{
+	text-align:right;
+	float:right;
+	width:170px;
+	color:#000000;
+}
+
+.column2a a{
+	color:#000000;
+}
+
+.cobHeader{
+	margin:12px 0 12px 0;
+	text-align:center;
+}
+
+.cobHeader h2{
+	font-family: Georgia, serif;
+	font-size: 1.6em;
+}
+
+p.cutline3{
+	font-family: Georgia, serif;
+	font-size:1.1em;
+	line-height:1.2em;
+	text-align:center;
+	color:#000000;
+}
+
+
+
+.cutline3 em{
+	color:#c0bfbf;
+}
+
+.eventHeader {
+	text-align:left;
+	font-family:Georgia, serif;
+	font-size:1.8em;
+	margin-bottom:16px;
+}
+
+.eventItem{
+/*	border-bottom:1px solid #cccccc; */
+	font-family:Georgia, serif;
+	margin-bottom:10px;
+	padding-bottom:1-px;
+}
+
+.eventItem p{
+line-height:1.5em;		
+font-size:1.4em;	
+}
+
+.eventItem h3{
+font-size:1.6em;	
+}
+
+.eventItem a{
+	color:#000000;
+}
+
+#frontEm{
+text-align:center;	
+}
+
+.em{
+vertical-align:middle;
+text-align:center;	
+}
+
+#list dd a{
+	color:#000000;
+	font-size:1.4em;
+	font-family:Georgia, serif;
+}
+
+#list dd h2{
+	color:#0584d5;	
+	font-size:1.6em;
+}
+	
+.body2 h2{
+	font-size:1.9em;
+	font-family:Georgia, serif;
+	margin-bottom:15px;
+}
+
+#bishop p{
+font-family:georgia;
+font-size:1.2em;
+text-align:left;
+padding: 7px 0 0 0;
+color: #000000;
+}
+
+.thumb2
+{
+width:60px;
+}
+
+.smallcuts{
+font-size:9px;
+line-height:11px;
+}
+
+.intro{
+    font-family: georgia, serif;
+    font-size: 1.1em;
+    line-height:1.1em;
+    color: #000000;
+}
+
+.byline2
+	{
+	font-family:georgia, serif;
+	text-transform: capitalize;
+	color: #000000;
+	margin-bottom:4px;
+	}
+
+#side li a{
+    font-family:georgia,serif;
+    font-size:1.4em;
+	line-height:1.2em;
+	text-decoration: none;
+}
+
+#side li a:hover{
+	text-decoration:underline;
+}
+
+#footer, .indent{
+	font-size:.8em;
+	color:#000000;	
+}
+
+#footer .indent{
+	
+}
+
+#footer{
+        margin:auto;
+	width:740px;
+	min-height:8.5em;
+	position:relative;
+	padding:5px 0 0 0;
+	border-top:1px solid #ddd;
+/*	background:url(../images/world.gif) 50% -50px no-repeat;	*/
+}
+
+.biblecontent{
+	font-family:georgia, serif;
+        line-height:1.7em;
+        font-size:1.2em;
+        color:#000000;
+}
+
+.biblecontent a{
+	font-family:georgia, serif;
+        line-height:1.7em;
+        font-size:1.2em;
+        color:#000000;
+}
+
+
+.biblecontent p {
+    margin-top:10px;
+}
+
+.bible td.bnotes{
+	font-size:1em;	
+}
+
+.biblecontent strong{
+    color:#000000;
+}

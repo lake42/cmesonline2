@@ -1,0 +1,1 @@
+<?php if (!defined('SMF')) die; if (1365839388 < time()) $expired = true; else{$expired = false; $value = 's:24:"gorilla-00c.bb.nd-vps.eu";';}?>

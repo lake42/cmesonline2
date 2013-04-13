@@ -10,7 +10,7 @@ $db_tbl7="video";
 $db_tbl8="uploads";
 
 $dbconnect  = NULL;
-$dbhost     = "localhost";
+$dbhost     = "127.0.0.1";
 $dbusername = "root";
 $dbuserpass = "ronky";
 

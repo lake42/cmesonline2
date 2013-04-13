@@ -1,0 +1,1 @@
+<?php if (!defined('SMF')) die; if (1365858961 < time()) $expired = true; else{$expired = false; $value = 'i:1365858931;';}?>
