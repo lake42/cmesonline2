@@ -1,5 +1,60 @@
 @charset "UTF-8";
 /*DO NOT REMOVE - This comment will force UTF-8 charset - ©*/
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+figure,
+hr {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th, strong, b, mark {
+  font-style: inherit;
+  font-weight: 600; }
+
+em, i, cite, q, dfn, var {
+  font-style: italic;
+  font-weight: inherit; }
+
+address {
+  font-style: normal; }
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted; }
+
+ins {
+  border-bottom: 1px solid; }
+
+a, ins {
+  text-decoration: none; }
+
+del, s {
+  text-decoration: line-through; }
+
+img {
+  border: none;
+  font-style: italic; }
+
+input,
+select, option, optgroup,
+textarea {
+  font: inherit; }
+
+textarea {
+  overflow: hidden; }
+
 /* secondary stylesheet for cmesonline.org  
    composed by j. lakey - 4/3/2011 */
 * {
@@ -988,3 +1043,20 @@ a {
 
 #globalheader #globalnav li#gn-support a span {
   background-position: 50% -210px; }
+
+.bishops h2 {
+  margin: 5px 0 3px 0; }
+.bishops p {
+  font-size: 15px;
+  line-height: 1.30667; }
+.bishops a {
+  color: blue; }
+.bishops a:hover {
+  text-decoration: underline;
+  color: green; }
+.bishops .column1 ul {
+  font-size: 13px;
+  line-height: 1.50769;
+  list-style-type: disc;
+  margin-left: 25px;
+  font-style: italic; }

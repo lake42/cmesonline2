@@ -6,12 +6,9 @@
 require_once('meta.php');
 ?>
 
-<link href="c/style2.css" rel="stylesheet" type="text/css" />
-<link href="layout.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="c/cme_base2.css" type="text/css" media="screen,projection" />
-<link rel="stylesheet" href="c/newnav.css" type="text/css" media="screen,projection" />
-<link rel='stylesheet' type='text/css' href='fullcalendar/fullcalendar.css' />
-<link rel='stylesheet' type='text/css' href='fullcalendar/fullcalendar.print.css' media='print' />
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen,projection" />
+
+
 <style type="text/css">
 	#loading {
 		position: absolute;

@@ -6,11 +6,10 @@
 require_once('meta.php');
 ?>
 <script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/standalone.css"/>
-<link href="c/style2.css" rel="stylesheet" type="text/css" />
-<link href="layout.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="c/cme_base2.css" type="text/css" media="screen,projection" />
-<link rel="stylesheet" href="c/newnav.css" type="text/css" media="screen,projection" />
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen,projection" />
 
 <style type="text/css">
 body {padding-top: 10px}

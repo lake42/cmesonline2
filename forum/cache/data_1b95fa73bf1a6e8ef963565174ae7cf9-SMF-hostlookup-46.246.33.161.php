@@ -1,0 +1,1 @@
+<?php if (!defined('SMF')) die; if (1365945611 < time()) $expired = true; else{$expired = false; $value = 's:28:"anon-33-161.vpn.ipredator.se";';}?>

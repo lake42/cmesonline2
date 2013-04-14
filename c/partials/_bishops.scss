@@ -1,0 +1,27 @@
+.bishops{
+	
+	h2{
+		margin:5px 0 3px 0;
+	}
+	
+	p {
+		@include font-size($h6-size + 3);
+	}
+	
+	a {
+		color:blue;
+	}
+	
+	a:hover{
+		text-decoration:underline;
+		color:green;
+	}
+	
+	.column1 ul {
+		@include font-size($h6-size + 1);
+		list-style-type:disc;
+		margin-left:25px;
+		font-style:italic;
+	}
+			
+}

@@ -38,7 +38,7 @@ function bpage($hookup,$id)
 	$info.=$row['contact_info'];
 
 	if ($row['website']){
-		$info.="<br><a href='" . $row['website'] . "' target='_blank'>" . $row['website'] . "</a></p></div>";
+		$info.="<a href='" . $row['website'] . "' target='_blank'>" . $row['website'] . "</a></p></div>";
 	}
 	else {
 		$info.="</p></div>";

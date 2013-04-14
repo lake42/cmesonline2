@@ -11,14 +11,11 @@ require_once ('bishops.php');
 require_once('meta.php');
 ?>
 
-<link href="c/style2.css" rel="stylesheet" type="text/css" />
-<link href="layout.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="c/cme_base2.css" type="text/css" media="screen,projection" />
-<link rel="stylesheet" href="c/newnav.css" type="text/css" media="screen,projection" />
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen,projection" />
 
 </head>
 
-<body id="index_1">
+<body id="index_1" class="bishops">
 	<div id="header_tall">
 		<div id="main">
 			<!--header start-->
